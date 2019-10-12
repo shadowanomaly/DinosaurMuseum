@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Kiosk</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!--Tabs--> 
+  <style>
+body {font-family: Arial;}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #717951;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.SecondTitle{
+   text-align: center; 
+   background: #717951;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+  
+/* Make the image fully responsive */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item h3{
+    color: #FFD993; 
+}
+
+.carousel-item p{
+    color: #FFD993; 
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.column2 {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.iframe{
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+  margin-bottom:50px;
+  margin-top:50px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column2 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+</style>
+<body>
+  
+<div class="header">
+  <h1>Welcome to the Dino museum</h1>
+  <p>Below is some info about some of the Dino's</p>
+</div>
+    
+<!--TopTabs--> 
+<div class="topnav">
+  <a href="Home.html">Home</a>
+  <a href="TyrannosaurusRex.html">Tyrannosaurus Rex</a>
+  <a href="Triceratops.html">Triceratops</a>
+  <a href="Carnotaurus.html">Carnotaurus</a>
+  <a href="Ankylosaurus.html">Ankylosaurus</a>
+  <a href="Mosasaurus.html">Mosasaurus</a>
+  <a href="index.html" style="float:right">Index</a>
+</div>
+
+  
+  <!--Carousel-->  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+    <li data-target="#demo" data-slide-to="4"></li>
+    <li data-target="#demo" data-slide-to="5"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Triceratops_0.png" alt="Los Angeles" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>We had such a great time in LA!</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="Triceratops_1.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="Triceratops_2.jpg" alt="New York" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="Triceratops_3.jpg" alt="New York" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="Triceratops_4.jpg" alt="New York" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>   
+    </div>
+     <div class="carousel-item">
+      <img src="Triceratops_5.jpg" alt="New York" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+  
+  <div class="SecondTitle">
+    <h2>DINO INFO</h2>
+    <p><i>We love music</i></p>
+    <p>Triceratops may have been one of the most common dinosaurs in the North American West at the time of Tyrannosaurus rex.<br> 
+These dinosaurs are often pictured traveling in large groups, but the biggest gathering of Triceratops ever found consisted of three youngsters.<br> 
+Triceratops nipped at low-growing plants with its beak and cut them with its 800 little teeth.<br> 
+When walking, Triceratops’s toes pointed outward, a primitive posture common to most dinosaurs.
+<br>Given its multi-ton weight, it did not walk quickly.
+<br>Weighed 12 tons
+<br>25.5ft long
+The skull is one third the size of its body.
+
+    </p>
+    
+        <div class="row">
+      <div class="column">
+        <p><strong>Triceratops</strong></p>
+        <img src="Triceratop_6.png" alt="Dinosaur images" style="width:60%">
+      </div>
+      <div class="column">
+        <p><strong>Triceratops</strong></p>
+        <img src="Triceratops_7.jpg" alt="Dinosaur images" style="width:60%">
+      </div>
+      <div class="column">
+        <p><strong>Triceratops</strong></p>
+        <img src="Triceratops_8.jpg" alt="Dinosaur images" style="width:60%">
+      </div>
+    </div>
+    
+    <!--video row-->
+    <div class="row2">
+        <div class="column2">
+            <p><strong>Video of Triceratops</strong></p>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/rk0iWp1SIu4">
+</iframe>
+    </div>
+        <div class="column2">
+        <p><strong>Video of Triceratops facts</strong></p>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/BmntWBQxesI">
+</iframe>
+    </div>
+        <div class="column2">
+        <p><strong>Triceratops Versus T-Rex</strong></p>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/CGvE1M95rtw">
+</iframe>
+    </div>
+    
+  </div>
+    
+    <!--Closing bracket for SecondTitle-->
+    </div>
+  
+  <div>
+      <!-- Image of location/map -->
+  <div class="Image" >
+<img src="Triceratops_9.jpg" style="width:100%">
+  </div>
+  
+ <div class="footer">
+     <a href="https://www.nationalgeographic.com/animals/prehistoric/triceratops-horridus/ ">Triceratops<br></a>
+      <a href="http://www.jurassicworld.com/intel ">T-Rex Info</a>
+</div>
+  </div>
+  
+</body>
+</html>
